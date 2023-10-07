@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infini Streams</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Create a separate CSS file for styling -->
+    <style>
+        /* Define your styles here */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+/* Add this CSS to your styles.css or within a <style> tag in the HTML file */
+header {
+    background-color: #FC547C; /* Pinkish background color */
+    padding: 20px 0; /* Add padding to the header for spacing */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000; /* Black color for the logo text */
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px; /* Add spacing between navigation items */
+}
+
+a {
+    text-decoration: none;
+    color: #FC547C; /* Pink color for navigation links */
+    background-color: #000; /* Black background color for navigation links */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    background-color: #FC547C; /* Invert colors on hover (pink background, black text) */
+    color: #000;
+}
+/* Add this CSS to your styles.css or within a <style> tag in the HTML file */
+/* Add this CSS to your styles.css or within a <style> tag in the HTML file */
+#main {
+    background-color: #111; /* Dark background color */
+    padding: 80px 20px; /* Adjust padding for more space */
+    text-align: center;
+    border: 2px solid #5CFCDC; /* Border with Cyan color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px #5CFCDC; /* Glow effect with Cyan color */
+    margin: 20px;
+    transition: all 1s ease;
+}
+
+#main h1 {
+    font-size: 36px;
+    color: #FCE4EC; /* Light Pink color for the heading text */
+    text-shadow: 2px 2px 4px #5CFCDC; /* Text shadow for glow effect */
+}
+
+#main p {
+    font-size: 18px;
+    color: #FCE4EC; /* Light Pink color for the paragraph text */
+    text-shadow: 2px 2px 4px #5CFCDC; /* Text shadow for glow effect */
+}
+
+/* Add animation when the Home button is pressed */
+#about {
+    background-color: #111; /* Dark background color */
+    padding: 80px 20px; /* Adjust padding for more space */
+    text-align: center;
+    border: 2px solid #FCA4BC; /* Border with Carnation Pink color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px #FCA4BC; /* Glow effect with Carnation Pink color */
+    margin: 20px;
+ scroll-behavior: smooth;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #FCE4EC; /* Light Pink color for the heading text */
+    text-shadow: 2px 2px 4px #FC547C; /* Text shadow for glow effect */
+}
+
+#about p {
+    font-size: 18px;
+    color: #FCE4EC; /* Light Pink color for the paragraph text */
+    text-shadow: 2px 2px 4px #FC547C; /* Text shadow for glow effect */
+}
+#investment {
+    background-color: #222; /* Black background color */
+    color: #ACFCEC; /* Cyan text color */
+    padding: 40px 20px; /* Adjust padding for spacing */
+    text-align: center;
+    border: 2px solid #5CFCDC; /* Border with Baby Blue color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px #5CFCDC; /* Glow effect with Baby Blue color */
+    margin: 20px;
+}
+
+#investment h2 {
+    font-size: 36px;
+}
+
+#investment p {
+    font-size: 18px;
+}
+
+#investment ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#investment li {
+    font-size: 18px;
+    text-shadow: none; /* No text shadow for list items */
+  margin: 2px;
+}
+
+#investment .investment-details ul {
+    margin-top: 20px; /* Add some spacing between list items */
+}
+      .investment-details {
+        max-width: 500px;
+        background-color: #111;
+        color: #ACFCEC; /* Cyan text color */
+    padding: 40px 20px; /* Adjust padding for spacing */
+    text-align: center;
+    border: 2px solid #5CFCDC; /* Border with Baby Blue color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px #5CFCDC; /* Glow effect with Baby Blue color */
+    margin: 20px auto;
+      }
+
+
+/* Add animation when navigating to this section */
+#download {
+    background-color: #111; /* Dark background color */
+    padding: 40px 20px; /* Adjust padding for spacing */
+    text-align: center;
+    border: 2px solid #FC547C; /* Border with Wild Watermelon color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px #FC547C; /* Glow effect with Wild Watermelon color */
+    margin: 20px;
+    color: #FC547C; /* Wild Watermelon text color */
+}
+
+#download h2 {
+    font-size: 36px;
+}
+
+#download p {
+    font-size: 18px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FC547C; /* Wild Watermelon background color */
+    color: #111; /* Dark text color */
+    text-decoration: none;
+    border: 2px solid #FC547C; /* Border with Wild Watermelon color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #111; /* Dark background color on hover */
+    color: #FC547C; /* Wild Watermelon text color on hover */
+}
+footer {
+    background-color: #111; /* Dark background color */
+    padding: 20px 0; /* Adjust padding for spacing */
+    text-align: center;
+    color: #FC547C; /* Wild Watermelon text color */
+    border-top: 1px solid #FC547C; /* Top border with Wild Watermelon color */
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0; /* Remove default margin for cleaner look */
+}
+
+.title {
+    display: flex; /* Use flexbox to arrange elements horizontally */
+    align-items: center; /* Vertically align items in the center */
+}
+
+.logo {
+    width: 50px; /* Adjust the width of the logo image as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between the logo and text */
+}
+
+.logo-text {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #FC547C; /* Pinkish color from your palette */
+}
+
+ /* Style for the "Back to Top" button */
+        #topButton {
+            display: none; /* Initially hide the button */
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: 1px solid #FC547C;
+            outline: none;
+            background-color: rgba(0,0,0,0.5); /* Pinkish color from your palette */
+            color: #fff; /* White text color */
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+      #topButton:hover {
+        background-color: #111; /* Dark background color on hover */
+    color: #FC547C; /* Wild Watermelon text color on hover */
+        box-shadow: 0px 0px 20px 5px #FC547C
+      }
+        /* Add more styles for header, sections, and other elements */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="title">
+           <img src="https://i.postimg.cc/jjqMtB5h/Infini-Streams.png" class="logo" alt="Infini Streams Logo">
+            <div class="logo">Infini Streams</div>
+          </div>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#investment">Investment Plans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main">
+        <h1>Welcome to Infini Streams</h1>
+        <p>Your gateway to unlimited earnings!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Infini Streams is a multi-level marketing company that offers incredible earning opportunities. Join us today and start your journey towards financial freedom.</p>
+    </section>
+
+    <section id="download">
+        <h2>Download Our App</h2>
+        <p>Get our app now and start earning. Available on Android.</p>
+        <a href="#" class="download-button">Download Now</a>
+    </section>
+
+    <section id="investment">
+    <h2>Investment Plans</h2>
+        <p>Discover our investment plans and watch your earnings grow exponentially. Start with an initial earning of 12,600 PKR.</p>
+       <div class="investment-details">
+        <ul>
+            <li>Total Investment: 500 PKR</li>
+          <br>
+            <li>Main Lead Income:</li>
+          <br>
+            <ul>
+                <li>Level 1: Main Lead Profit (MLP) = 200 PKR</li>
+                <li>Level 2: Main Lead Profit (MLP) = 200 PKR</li>
+                <li>Level 3: Main Lead Profit (MLP) = 400 PKR</li>
+                <li>Level 4: Main Lead Profit (MLP) = 800 PKR</li>
+                <li>Level 5: Main Lead Profit (MLP) = 1600 PKR</li>
+                <li>Level 6: Main Lead Profit (MLP) = 3200 PKR</li>
+                <li>Level 7: Main Lead Profit (MLP) = 6400 PKR</li>
+            </ul>
+          <br>
+            <li>Total Main Lead Profit: 12,600 PKR</li>
+          <br>
+            <li>Total Earning: 12,600 PKR (12,100 PKR profit)</li>
+        </ul>
+    </div>
+</section>
+<button onclick="scrollToTop()" id="topButton" title="Go to top">&#8593;</button>
+
+    <!-- JavaScript to handle scrolling to top -->
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Smooth scrolling effect
+            });
+        }
+
+        // Show the button when user scrolls down
+        window.onscroll = function() {
+            toggleTopButton();
+        };
+
+        function toggleTopButton() {
+            const topButton = document.getElementById('topButton');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = 'block';
+            } else {
+                topButton.style.display = 'none';
+            }
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2023 Infini Streams</p>
+    </footer>
+  <script>
+    
+</script>
+</body>
+</html>
