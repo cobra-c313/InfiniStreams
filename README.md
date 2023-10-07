@@ -15,7 +15,7 @@ Infini Streams is a multi-level marketing company that offers incredible earning
 ## Download Our App
 Get our app now and start earning. Available on Android.
 
-[Download Now](#)
+[Download Now](InfiniStrems.apk)
 
 ## Investment Plans
 Discover our investment plans and watch your earnings grow exponentially. Start with an initial earning of 12,600 PKR.
